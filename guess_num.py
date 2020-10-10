@@ -8,8 +8,7 @@ while True:
 	if num == r:
 		print("終於猜對了!!")
 		break
+	elif num > r:
+		print("猜錯了，密碼比",num,"還要小")
 	else:
-		if r > num:
-			print("猜錯了，密碼比",num,"還要大")
-		else:
-			print("猜錯了，密碼比",num,"還要小")
+		print("猜錯了，密碼比",num,"還要大")
