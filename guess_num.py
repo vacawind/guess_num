@@ -1,10 +1,14 @@
 import random
 
-r = random.randint(1,100)
+start = input("決定猜數字的起始值：")
+start = int(start)
+end = input("決定猜數字的結束值：")
+end = int(end)
+r = random.randint(start,end)
 count = 0
 while True:
 	print("\n")
-	num = input("猜一個數字，範圍1~100：")
+	num = input("猜一個數字：")
 	num = int(num)
 	count = count + 1
 	if num == r:
